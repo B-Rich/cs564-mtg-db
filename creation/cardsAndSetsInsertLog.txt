@@ -1,0 +1,7 @@
+mysql> source insertCardsAndSets.sql
+Query OK, 23721 rows affected, 5 warnings (1.52 sec)
+Records: 23721  Duplicates: 0  Warnings: 0
+
+Query OK, 126 rows affected (0.00 sec)
+Records: 126  Duplicates: 0  Warnings: 0
+

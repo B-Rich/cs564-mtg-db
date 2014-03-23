@@ -1,0 +1,32 @@
+mysql> source insertData.sql
+Query OK, 12000 rows affected (0.17 sec)
+Records: 12000  Duplicates: 0  Warnings: 0
+
+Query OK, 200 rows affected (0.02 sec)
+Records: 200  Duplicates: 0  Warnings: 0
+
+Query OK, 366 rows affected (0.01 sec)
+Records: 366  Duplicates: 0  Warnings: 0
+
+Query OK, 36600 rows affected (1.49 sec)
+Records: 36600  Duplicates: 0  Warnings: 0
+
+Query OK, 5000 rows affected (0.11 sec)
+Records: 5000  Duplicates: 0  Warnings: 0
+
+Query OK, 2000 rows affected, 1 warning (0.20 sec)
+Records: 2000  Duplicates: 0  Warnings: 1
+
+Query OK, 8000 rows affected (0.13 sec)
+Records: 8000  Duplicates: 0  Warnings: 0
+
+Query OK, 8000 rows affected (0.17 sec)
+Records: 8000  Duplicates: 0  Warnings: 0
+
+mysql> source insertCardsAndSets.sql
+Query OK, 23721 rows affected, 5 warnings (1.51 sec)
+Records: 23721  Duplicates: 0  Warnings: 0
+
+Query OK, 126 rows affected (0.01 sec)
+Records: 126  Duplicates: 0  Warnings: 0
+

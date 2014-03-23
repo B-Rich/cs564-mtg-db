@@ -1,0 +1,140 @@
+mysql> source createTable.sql
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.15 sec)
+
++------------+-----------------------------------------------------------------------+------+-----+---------+-------+
+| Field      | Type                                                                  | Null | Key | Default | Extra |
++------------+-----------------------------------------------------------------------+------+-----+---------+-------+
+| cardId     | int(11)                                                               | NO   | PRI | NULL    |       |
+| cardName   | varchar(200)                                                          | YES  |     | NULL    |       |
+| setName    | varchar(200)                                                          | YES  |     | NULL    |       |
+| rarity     | enum('Common','Uncommon','Rare','Mythic Rare','Special','Basic Land') | YES  |     | NULL    |       |
+| cost       | varchar(50)                                                           | YES  |     | NULL    |       |
+| cmc        | int(11)                                                               | YES  |     | NULL    |       |
+| type       | varchar(50)                                                           | YES  |     | NULL    |       |
+| subtype    | varchar(50)                                                           | YES  |     | NULL    |       |
+| colors     | varchar(200)                                                          | YES  |     | NULL    |       |
+| ruleText   | varchar(20000)                                                        | YES  |     | NULL    |       |
+| flavorText | varchar(20000)                                                        | YES  |     | NULL    |       |
+| power      | int(11)                                                               | YES  |     | NULL    |       |
+| toughness  | int(11)                                                               | YES  |     | NULL    |       |
+| artist     | varchar(200)                                                          | YES  |     | NULL    |       |
+| imageLink  | varchar(200)                                                          | YES  |     | NULL    |       |
++------------+-----------------------------------------------------------------------+------+-----+---------+-------+
+15 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
++----------------+--------------+------+-----+---------+-------+
+| Field          | Type         | Null | Key | Default | Extra |
++----------------+--------------+------+-----+---------+-------+
+| deckName       | varchar(200) | YES  |     | NULL    |       |
+| playerUsername | varchar(200) | YES  |     | NULL    |       |
+| cardId         | int(11)      | YES  |     | NULL    |       |
+| quantity       | int(11)      | YES  |     | NULL    |       |
++----------------+--------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
++-----------------+---------------+------+-----+---------+-------+
+| Field           | Type          | Null | Key | Default | Extra |
++-----------------+---------------+------+-----+---------+-------+
+| deckName        | varchar(200)  | NO   | PRI |         |       |
+| playerUsername  | varchar(200)  | NO   | PRI |         |       |
+| format          | varchar(50)   | YES  |     | NULL    |       |
+| deckDescription | varchar(3000) | YES  |     | NULL    |       |
+| creationDate    | date          | YES  |     | NULL    |       |
++-----------------+---------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
++----------------+---------------+------+-----+---------+-------+
+| Field          | Type          | Null | Key | Default | Extra |
++----------------+---------------+------+-----+---------+-------+
+| setName        | varchar(200)  | NO   | PRI | NULL    |       |
+| dateReleased   | date          | YES  |     | NULL    |       |
+| setDescription | varchar(3000) | YES  |     | NULL    |       |
+| logoLink       | varchar(200)  | YES  |     | NULL    |       |
++----------------+---------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
++--------------+--------------+------+-----+---------+-------+
+| Field        | Type         | Null | Key | Default | Extra |
++--------------+--------------+------+-----+---------+-------+
+| retailerName | varchar(200) | NO   | PRI |         |       |
+| location     | varchar(200) | NO   | PRI |         |       |
+| rating       | decimal(2,1) | YES  |     | NULL    |       |
++--------------+--------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
++--------------+--------------+------+-----+---------+-------+
+| Field        | Type         | Null | Key | Default | Extra |
++--------------+--------------+------+-----+---------+-------+
+| retailerName | varchar(200) | NO   | PRI |         |       |
+| location     | varchar(200) | NO   | PRI |         |       |
+| cardId       | int(11)      | NO   | PRI | 0       |       |
+| price        | decimal(8,2) | NO   | PRI | 0.00    |       |
+| quantity     | int(11)      | YES  |     | NULL    |       |
++--------------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
++----------------+--------------+------+-----+---------+-------+
+| Field          | Type         | Null | Key | Default | Extra |
++----------------+--------------+------+-----+---------+-------+
+| playerUsername | varchar(200) | NO   | PRI | NULL    |       |
+| firstName      | varchar(20)  | YES  |     | NULL    |       |
+| lastName       | varchar(20)  | YES  |     | NULL    |       |
+| birthday       | date         | YES  |     | NULL    |       |
+| wins           | int(11)      | YES  |     | NULL    |       |
+| draws          | int(11)      | YES  |     | NULL    |       |
+| losses         | int(11)      | YES  |     | NULL    |       |
+| ranking        | int(11)      | YES  |     | NULL    |       |
++----------------+--------------+------+-----+---------+-------+
+8 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
++----------------+---------------+------+-----+------------+-------+
+| Field          | Type          | Null | Key | Default    | Extra |
++----------------+---------------+------+-----+------------+-------+
+| playerUsername | varchar(200)  | NO   | PRI |            |       |
+| title          | varchar(200)  | NO   | PRI |            |       |
+| datePosted     | date          | NO   | PRI | 0000-00-00 |       |
+| summary        | varchar(1000) | YES  |     | NULL       |       |
+| content        | varchar(5000) | YES  |     | NULL       |       |
++----------------+---------------+------+-----+------------+-------+
+5 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
++----------------+--------------+------+-----+---------+-------+
+| Field          | Type         | Null | Key | Default | Extra |
++----------------+--------------+------+-----+---------+-------+
+| playerUsername | varchar(200) | YES  |     | NULL    |       |
+| title          | varchar(200) | YES  |     | NULL    |       |
+| datePosted     | varchar(200) | YES  |     | NULL    |       |
+| cardId         | int(11)      | YES  |     | NULL    |       |
++----------------+--------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
++----------------+--------------+------+-----+---------+-------+
+| Field          | Type         | Null | Key | Default | Extra |
++----------------+--------------+------+-----+---------+-------+
+| playerUsername | varchar(200) | YES  |     | NULL    |       |
+| title          | varchar(200) | YES  |     | NULL    |       |
+| datePosted     | varchar(200) | YES  |     | NULL    |       |
+| deckName       | varchar(200) | YES  |     | NULL    |       |
++----------------+--------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
