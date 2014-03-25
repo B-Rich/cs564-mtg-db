@@ -28,10 +28,30 @@ NATURAL JOIN Cards
 WHERE Blogs.datePosted > '2009-01-01';
 
 ## Union Query
+SELECT setName FROM Cards
+UNION 
+SELECT setName FROM Sets;
 
 ## Group-by Query
+SELECT retailerName, AVG(price) as averageMythicRarePrice 
+FROM Sells NATURAL JOIN Cards 
+WHERE Cards.rarity = 'Mythic Rare' 
+GROUP BY retailerName; 
 
 ## Order-by Query
+SELECT setName, COUNT(flavorText) AS flavorAmount
+FROM Cards  
+WHERE LENGTH(flavorText) > 0  
+GROUP BY setName 
+ORDER BY flavorAmount DESC;
 
 ## Distinct Query
+SELECT DISTINCT cardName
+FROM Cards
+WHERE rarity = 'Common';
 
+## Aggregate Query
+SELECT Cards.cardName, Cards.setName, retailerName, quantity, MIN(price) as minimumPrice 
+FROM Sells NATURAL JOIN Cards 
+WHERE Cards.cardName = 'Brimaz, King of Oreskos' 
+GROUP BY retailerName; 
