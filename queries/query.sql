@@ -26,3 +26,12 @@ NATURAL JOIN Blogs
 NATURAL JOIN TalkAboutCard 
 NATURAL JOIN Cards 
 WHERE Blogs.datePosted > '2009-01-01';
+
+## Union Query
+
+## Group-by Query
+
+## Order-by Query
+
+## Distinct Query
+
