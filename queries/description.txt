@@ -1,0 +1,53 @@
+Query Descriptions
+By: Lucas Nunno
+
+Query.sql descriptions
+======================
+### General Queries
+Sees what cards from Born of the Gods have flavor text.
+
+Find recently made decks by good players younger than 24. "Good" here is defined as a player with more than 900 wins and less than 10 losses.
+
+Find retailers with rated with a 4 or better out of 5 that are located in Albuquerque, Phoenix, and Tempe. The idea for this was to perhaps implement some geo-location based off the user's current location.
+
+### Join Queries
+Provides additional information about the cards that retailers sell, such as their name, price, quantity, etc. This would be an ideal view to construct later on.
+
+Shows recently talked about cards and the players and blogs that mentioned them, this could also be a useful view.
+
+### Union Queries
+Shows the full set list. Potentially there could be sets that have been announced but do not have cards unveiled, and this could handle that corner case.
+
+### Group-by Queries
+Shows the average mythic rare card price by retailer.
+
+### Order-by Queries
+Shows the sets with cards with the most flavor text in them. This is more of a fun query to show what sets have the most backstory associated with them and I haven't been able to find anything like it on other sites.
+
+Show the top ten players based on wins.
+
+### Distinct Queries
+Shows distinct common cards, cards are often reprinted in later sets, so this shows all the names of distinct cards.
+
+### Aggregate Queries
+Shows the minimum price for a specific card, in this case it is Brimaz, King of Oreskos for all retailers. This is helpful for a store front where the user would like to buy a card at the lowest possible price.
+
+Update.sql descriptions
+=======================
+
+### Insert Queries
+Adds the new set "Journey into Nyx" into the Sets table also provides additional text that is only available on the Gatherer website that may be enticing to customers.
+
+Create a new player in the database.
+
+### Update Queries
+The store "Active Imagination" is having a sale on all uncommons where the price is now 25 cents per card.
+
+Update player's rankings based on their number of wins. Players with the most wins are higher ranks than players with less wins.
+
+A new season has started so all the player wins, losses, and draws must be reset and all the rankings must be equal.
+
+### Delete Queries
+Delete a blog and the traces that it talked about specific cards and decks within its content. Requires deletion in multiple tables.
+
+A store goes out of business, therefore we should delete the store's location and the cards that it sells from the database.

@@ -1,0 +1,105 @@
+mysql> source update.sql
+Query OK, 1 row affected (0.00 sec)
+
++------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+| setName          | dateReleased | setDescription                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | logoLink                                                                        |
++------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+| Journey into Nyx | 2014-05-02   | Your path has taken you to Theros, a plane beset by chaos. A mortal Planeswalker has forced his way into the pantheon of gods, who are outraged and threatened by his ascent. Drawing on the power of the god-realm of Nyx, they send creatures of pure enchantment to crush mortal armies. The heroes of Theros strive mightily as they face their greatest challenge: standing their ground against the gods. There can be no peace until the upstart is thrown down. Here on Theros, you will forge a destiny to echo through the ages. Perhaps you will lead your fellow mortals on the battlefield, bolstered by your courage—or champion the pantheon as they struggle to right the natural order. Embrace your fate and become a legendary hero fit to rival the gods.   | http://wiki.mtgsalvation.com/images/thumb/b/b2/JOUsymbol.jpg/22px-JOUsymbol.jpg |
++------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+1 row in set (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
++----------------+-----------+----------+------------+------+-------+--------+---------+
+| playerUsername | firstName | lastName | birthday   | wins | draws | losses | ranking |
++----------------+-----------+----------+------------+------+-------+--------+---------+
+| lnunno         | Lucas     | Nunno    | 1990-11-01 | 1000 |     0 |      0 |       1 |
++----------------+-----------+----------+------------+------+-------+--------+---------+
+1 row in set (0.00 sec)
+
+Query OK, 28 rows affected (0.00 sec)
+Rows matched: 28  Changed: 28  Warnings: 0
+
++--------------------+----------------------+----------+-------+
+| retailerName       | cardName             | rarity   | price |
++--------------------+----------------------+----------+-------+
+| Active Imagination | Scrabbling Claws     | Uncommon |  0.25 |
+| Active Imagination | Mtenda Griffin       | Uncommon |  0.25 |
+| Active Imagination | Voyager Staff        | Uncommon |  0.25 |
+| Active Imagination | Wall of Spears       | Uncommon |  0.25 |
+| Active Imagination | Tunnel               | Uncommon |  0.25 |
+| Active Imagination | School of the Unseen | Uncommon |  0.25 |
+| Active Imagination | Dryad Sophisticate   | Uncommon |  0.25 |
+| Active Imagination | Gelectrode           | Uncommon |  0.25 |
+| Active Imagination | Forlorn Pseudamma    | Uncommon |  0.25 |
+| Active Imagination | Segovian Leviathan   | Uncommon |  0.25 |
+| Active Imagination | Imperious Perfect    | Uncommon |  0.25 |
+| Active Imagination | Red Ward             | Uncommon |  0.25 |
+| Active Imagination | Wall of Stone        | Uncommon |  0.25 |
+| Active Imagination | Edgewalker           | Uncommon |  0.25 |
+| Active Imagination | Persuasion           | Uncommon |  0.25 |
+| Active Imagination | Pyroconvergence      | Uncommon |  0.25 |
+| Active Imagination | Vec Townships        | Uncommon |  0.25 |
+| Active Imagination | Sarcatog             | Uncommon |  0.25 |
+| Active Imagination | Rod of Spanking      | Uncommon |  0.25 |
+| Active Imagination | Storm Seeker         | Uncommon |  0.25 |
+| Active Imagination | Puppet Conjurer      | Uncommon |  0.25 |
+| Active Imagination | Pyromania            | Uncommon |  0.25 |
+| Active Imagination | Winter Blast         | Uncommon |  0.25 |
+| Active Imagination | Deep Wood            | Uncommon |  0.25 |
+| Active Imagination | Aphetto Alchemist    | Uncommon |  0.25 |
+| Active Imagination | Touch of Vitae       | Uncommon |  0.25 |
+| Active Imagination | Uphill Battle        | Uncommon |  0.25 |
+| Active Imagination | Lifetap              | Uncommon |  0.25 |
++--------------------+----------------------+----------+-------+
+28 rows in set (0.00 sec)
+
+Query OK, 5001 rows affected (0.03 sec)
+Rows matched: 5001  Changed: 5001  Warnings: 0
+
++----------------+------+-------+--------+---------+
+| playerUsername | wins | draws | losses | ranking |
++----------------+------+-------+--------+---------+
+| tatary796      |    0 |     0 |      0 |     999 |
+| vanish157      |    0 |     0 |      0 |     999 |
+| cutright178    |    0 |     0 |      0 |     999 |
+| mccutcheon424  |    0 |     0 |      0 |     999 |
+| prompter68     |    0 |     0 |      0 |     999 |
+| ihs476         |    0 |     0 |      0 |     999 |
+| bismuthous135  |    0 |     0 |      0 |     999 |
+| blum9          |    0 |     0 |      0 |     999 |
+| armijo923      |    0 |     0 |      0 |     999 |
+| kitten842      |    0 |     0 |      0 |     999 |
++----------------+------+-------+--------+---------+
+10 rows in set (0.00 sec)
+
+Query OK, 5000 rows affected (0.08 sec)
+Rows matched: 5001  Changed: 5000  Warnings: 0
+
++----------------+------+-------+--------+---------+
+| playerUsername | wins | draws | losses | ranking |
++----------------+------+-------+--------+---------+
+| tatary796      |    0 |     0 |      0 |       1 |
+| vanish157      |    0 |     0 |      0 |       2 |
+| cutright178    |    0 |     0 |      0 |       3 |
+| mccutcheon424  |    0 |     0 |      0 |       4 |
+| prompter68     |    0 |     0 |      0 |       5 |
+| ihs476         |    0 |     0 |      0 |       6 |
+| bismuthous135  |    0 |     0 |      0 |       7 |
+| blum9          |    0 |     0 |      0 |       8 |
+| armijo923      |    0 |     0 |      0 |       9 |
+| kitten842      |    0 |     0 |      0 |      10 |
++----------------+------+-------+--------+---------+
+10 rows in set (0.01 sec)
+
+Query OK, 9 rows affected (0.07 sec)
+
+Empty set (0.02 sec)
+
+Query OK, 101 rows affected (0.00 sec)
+
+Empty set (0.00 sec)
+
+Empty set (0.00 sec)
+
+mysql> quit

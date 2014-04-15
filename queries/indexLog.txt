@@ -1,0 +1,631 @@
+mysql> source index.sql
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| cardName                 | setName          | flavorText                                                                                                                                                                                                                           |
++--------------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Aerie Worshippers        | Born of the Gods | They can conjure stars from a clear sky.                                                                                                                                                                                             |
+| Akroan Conscriptor       | Born of the Gods | "The time to serve is now."                                                                                                                                                                                                          |
+| Akroan Phalanx           | Born of the Gods | Shields up, spears out, heels set, hearts firm.                                                                                                                                                                                      |
+| Akroan Skyguard          | Born of the Gods | "Trust me. When you have earned a god's favor, you'll know."                                                                                                                                                                         |
+| Archetype of Aggression  | Born of the Gods | "Did Purphoros bless Maikal because of his rage? Or did Maikal's rage blossom after he'd been blessed? Only the gods know."
+
+—Eocles, oracle of Purphoros                                                                           |
+| Archetype of Courage     | Born of the Gods | "It has been my experience that soldiers most fervently follow generals who lead by example."
+
+—Elspeth                                                                                                                             |
+| Archetype of Endurance   | Born of the Gods | Despite its fearsome stature, it is as elusive as a shadow, circling round to stalk those who presume to hunt it.                                                                                                                    |
+| Archetype of Finality    | Born of the Gods | She sees mortals not as they wish to be, but as what they will become.                                                                                                                                                               |
+| Archetype of Imagination | Born of the Gods | "Is it not the embodiment of our aspirations?"
+
+—Prokopios, astronomer of Meletis                                                                                                                                                   |
+| Ashiok's Adept           | Born of the Gods | "Every nightmare is a caged bird that yearns to be set free."
+
+—Ashiok, Nightmare Weaver                                                                                                                                            |
+| Aspect of Hydra          | Born of the Gods | "Even alone I outnumber you."                                                                                                                                                                                                        |
+| Asphyxiate               | Born of the Gods | "Some poisons enter through the blood. Some are ingested. Some are inhaled. All ways through which mortals draw strength are paths for poison."
+
+—Agathe, priest of Pharika                                                         |
+| Bile Blight              | Born of the Gods | Not an arrow loosed, javelin thrown, nor sword raised. None were needed.                                                                                                                                                             |
+| Black Oak of Odunos      | Born of the Gods | Phenax promised the newly dead souls they would be spared from Erebos. In this, he did not lie.                                                                                                                                      |
+| Bolt of Keranos          | Born of the Gods | The breakthroughs granted by Keranos, god of epiphany, can be surprisingly literal.                                                                                                                                                  |
+| Charging Badger          | Born of the Gods | "If the hierarchies of nature were determined by ferocity alone, the badger would be lord of the beasts."
+
+—Anthousa of Setessa                                                                                                     |
+| Claim of Erebos          | Born of the Gods | Priests of Erebos give an occasional reminder to mortals who have forgotten their mortality.                                                                                                                                         |
+| Crypsis                  | Born of the Gods | Tritons borrow the camouflage of their oceanic prey to become predators on land.                                                                                                                                                     |
+| Culling Mark             | Born of the Gods | Hunt without Nylea's leave and you may find yourself the next quarry.                                                                                                                                                                |
+| Cyclops of One-Eyed Pass | Born of the Gods | The Champion armed herself to face the cyclops, heedless of her companions' despair.
+
+"How will you defeat it with only one spear?" asked young Althemone.
+
+The Champion raised her weapon. "It has but one eye."
+
+—The Theriad   |
++--------------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+20 rows in set (0.01 sec)
+
++-------------------------------------------------------------------------------------------+----------------+------+--------+------------+
+| deckName                                                                                  | playerUsername | wins | losses | birthday   |
++-------------------------------------------------------------------------------------------+----------------+------+--------+------------+
+| Cockney Vijayanagar'S Machined Boozer Fireproofs Antechambers Lobbies Sickle              | tad219         |  979 |      6 | 1996-01-24 |
+| Stalin'S Beneficent Khayyam                                                               | tad219         |  979 |      6 | 1996-01-24 |
+| Nominee                                                                                   | tad219         |  979 |      6 | 1996-01-24 |
+| Heartiness'S Throne'S Leeward'S Unsnarling                                                | tad219         |  979 |      6 | 1996-01-24 |
+| Worshipful Advertised Tipperary                                                           | tad219         |  979 |      6 | 1996-01-24 |
+| Satiates Skier'S Tilt Analogies Trivially Deliberation Libra'S                            | tad219         |  979 |      6 | 1996-01-24 |
+| Slavic Tintinnabulation Professorial Ignore Reales Wampum Spouse'S Attainment'S Junctions | tad219         |  979 |      6 | 1996-01-24 |
+| Toughness Hardened Polio'S Meanest Freestyles Wartime'S Sashay'S Blowsier                 | tad219         |  979 |      6 | 1996-01-24 |
+| Overhauls Sock Cigarillos                                                                 | tad219         |  979 |      6 | 1996-01-24 |
+| Shipwrecking Hallucinogens Thesauri Undisciplined Cliffhanger Stockyard'S                 | tad219         |  979 |      6 | 1996-01-24 |
+| Purdue'S Egyptians Thicket Selvedge Wildflowers Hullabaloo'S                              | tad219         |  979 |      6 | 1996-01-24 |
+| Starvation Injected Helpmate'S Baxter                                                     | tad219         |  979 |      6 | 1996-01-24 |
+| Teak Undignified Earmuff Garrotting Canaries Lvov Twinkling'S Dredger Vault'S             | tad219         |  979 |      6 | 1996-01-24 |
+| Prickled Banalities April'S Voodoos Stigmatizing                                          | tad219         |  979 |      6 | 1996-01-24 |
+| Rhiannon'S Euphrates'S Miscount Prematurely Parasites                                     | tad219         |  979 |      6 | 1996-01-24 |
+| Breakups Applause'S Jasper                                                                | tad219         |  979 |      6 | 1996-01-24 |
+| Booing Abridgment'S Shrugging Wildlife                                                    | tad219         |  979 |      6 | 1996-01-24 |
+| Clubhouse Clara Cooed Guineas Anteater Locus'S                                            | tad219         |  979 |      6 | 1996-01-24 |
+| Inefficiently                                                                             | tad219         |  979 |      6 | 1996-01-24 |
+| Au Coward Printer'S Crescents                                                             | tad219         |  979 |      6 | 1996-01-24 |
++-------------------------------------------------------------------------------------------+----------------+------+--------+------------+
+20 rows in set (0.00 sec)
+
++-----------------------+---------------------------------------------------------------+
+| retailerName          | location                                                      |
++-----------------------+---------------------------------------------------------------+
+| Game Depot            | Tempe, AZ 3136 S. McClintock Drive #11 United States          |
+| Pop Culture Paradise  | Tempe, AZ 707 S Forest Ave Suite A United States              |
+| Samurai Comics        | Phoenix, AZ 5024 7th st. United States                        |
+| Samurai Comics - West | Phoenix, AZ 10720 W. Indian School Road # 61 United States    |
+| Active Imagination    | Albuquerque, NM 11200 Montgomery BLVD NE STE 10 United States |
++-----------------------+---------------------------------------------------------------+
+5 rows in set (0.00 sec)
+
++---------------------------+--------------------------------+----------------------------+-------+----------+
+| cardName                  | setName                        | retailerName               | price | quantity |
++---------------------------+--------------------------------+----------------------------+-------+----------+
+| Avizoa                    | Weatherlight                   | Collector's Hideaway       | 10.24 |       18 |
+| Maze of Ith               | From the Vault: Realms         | Borderland Relics          | 18.81 |       20 |
+| Wurmcoil Engine           | Scars of Mirrodin              | Vintage Stock-Fayetteville | 17.77 |       19 |
+| Chromeshell Crab          | Magic: The Gathering-Commander | Pop Culture Paradise       | 10.29 |       18 |
+| Scion of Vitu-Ghazi       | Dragon's Maze                  | A Hidden Fortress          | 10.10 |       19 |
+| Righteousness             | Limited Edition Beta           | California Card Company    | 10.31 |       19 |
+| Dreamborn Muse            | Magic: The Gathering-Commander | Collector's Paradise       | 10.10 |       19 |
+| Sheoldred, Whispering One | New Phyrexia                   | Comic Cult                 | 19.58 |       19 |
+| Oath of Druids            | Exodus                         | Comic Cult                 | 10.17 |       19 |
+| Curse of the Swine        | Theros                         | Game Kastle                | 10.31 |       19 |
+| Blinding Light            | Starter 1999                   | Game Kastle                | 10.24 |       18 |
+| Devout Invocation         | Magic 2014 Core Set            | Three J's Sportscards      | 18.41 |       19 |
+| Master Healer             | Urza's Destiny                 | Stonebridge Games          | 10.45 |       18 |
+| Descent into Madness      | Avacyn Restored                | Stonebridge Games          | 18.10 |       18 |
+| Apprentice Necromancer    | Urza's Destiny                 | Arkham Asylum              | 10.29 |       19 |
+| Beast of Burden           | Urza's Legacy                  | Cave Comics                | 10.25 |       18 |
+| Gifts Ungiven             | From the Vault: Exiled         | Anthem Games               | 13.35 |       19 |
+| Thunderblade Charge       | Future Sight                   | Collector's Paradise, A    | 10.36 |       18 |
+| Grand Abolisher           | Magic 2012                     | Comics Direct              | 10.11 |       20 |
+| Jace Beleren              | Magic 2011                     | Game Masters Guild         | 12.00 |       18 |
++---------------------------+--------------------------------+----------------------------+-------+----------+
+20 rows in set (0.01 sec)
+
++------------------+------------+--------------------------+
+| playerUsername   | datePosted | cardName                 |
++------------------+------------+--------------------------+
+| septicidal238    | 2009-01-24 | Mimic Vat                |
+| septicidal238    | 2009-01-24 | Brutalizer Exarch        |
+| septicidal238    | 2009-01-24 | Phyrexian Slayer         |
+| septicidal238    | 2009-01-24 | Vesuva                   |
+| commorant465     | 2009-08-08 | Dingus Egg               |
+| commorant465     | 2009-08-08 | Doomsday                 |
+| commorant465     | 2009-08-08 | Oros, the Avenger        |
+| commorant465     | 2009-08-08 | Forest                   |
+| poppycock404     | 2009-08-09 | Plains                   |
+| poppycock404     | 2009-08-09 | Walk the Aeons           |
+| poppycock404     | 2009-08-09 | Consume Spirit           |
+| poppycock404     | 2009-08-09 | Voidmage Prodigy         |
+| chi228           | 2009-06-17 | Boris Devilboon          |
+| chi228           | 2009-06-17 | Forest                   |
+| chi228           | 2009-06-17 | Spinal Villain           |
+| chi228           | 2009-06-17 | Phantasmal Fiend         |
+| swallowtailed478 | 2009-07-03 | Deranged Hermit          |
+| swallowtailed478 | 2009-07-03 | Nemesis Trap             |
+| swallowtailed478 | 2009-07-03 | Pestilent Kathari        |
+| swallowtailed478 | 2009-07-03 | Blade of the Sixth Pride |
++------------------+------------+--------------------------+
+20 rows in set (0.00 sec)
+
++-------------------------+
+| setName                 |
++-------------------------+
+| Exodus                  |
+| Mirrodin                |
+| The Dark                |
+| Betrayers of Kamigawa   |
+| Dark Ascension          |
+| Mirage                  |
+| Ravnica: City of Guilds |
+| Weatherlight            |
+| Eighth Edition          |
+| Vanguard                |
+| Limited Edition Alpha   |
+| Champions of Kamigawa   |
+| Theros                  |
+| Alliances               |
+| Chronicles              |
+| Guildpact               |
+| Born of the Gods        |
+| Dragon's Maze           |
+| New Phyrexia            |
+| Visions                 |
++-------------------------+
+20 rows in set (0.06 sec)
+
++---------------------------------+------------------------+
+| retailerName                    | averageMythicRarePrice |
++---------------------------------+------------------------+
+| 5 D's Collectibles & Gifts      |              10.040000 |
+| 9th Zone                        |               7.428000 |
+| A & N Sports Cards Inc          |              12.313333 |
+| A Hidden Fortress               |               9.551667 |
+| A+ Comics & Collectibles        |               6.120000 |
+| A-1 Comics Inc.                 |               5.935000 |
+| A-1 Comics Inc. - Roseville     |              11.790000 |
+| Abington Games                  |               8.290000 |
+| Active Imagination              |               7.280000 |
+| Adventures in Gaming            |               9.410000 |
+| AK Comics                       |               7.116667 |
+| Alans                           |               5.756667 |
+| Alien Worlds                    |               8.755000 |
+| All American #1                 |              15.626667 |
+| All American #2                 |              10.210000 |
+| All American Collectibles       |              14.140000 |
+| All Star Comics                 |              11.216667 |
+| All Things Fun                  |              10.015000 |
+| Alternate Universes             |               4.880000 |
+| Alternate Universes - Blue Bell |               8.190000 |
++---------------------------------+------------------------+
+20 rows in set (0.01 sec)
+
++-------------------------+--------------+
+| setName                 | flavorAmount |
++-------------------------+--------------+
+| Tenth Edition           |          313 |
+| Eighth Edition          |          290 |
+| Seventh Edition         |          278 |
+| Ninth Edition           |          267 |
+| Fifth Edition           |          254 |
+| Ice Age                 |          239 |
+| Tempest                 |          239 |
+| Mirage                  |          237 |
+| Mercadian Masques       |          233 |
+| Shadowmoor              |          222 |
+| Urza's Saga             |          221 |
+| Classic Sixth Edition   |          219 |
+| Onslaught               |          216 |
+| Innistrad               |          213 |
+| Odyssey                 |          206 |
+| Commander 2013 Edition  |          205 |
+| Invasion                |          204 |
+| Ravnica: City of Guilds |          202 |
+| Shards of Alara         |          193 |
+| Return to Ravnica       |          191 |
++-------------------------+--------------+
+20 rows in set (0.04 sec)
+
++------------------+
+| cardName         |
++------------------+
+| Æther Tide       |
+| Allay            |
+| Anarchist        |
+| Angelic Blessing |
+| Avenging Druid   |
+| Bequeathal       |
+| Carnophage       |
+| Cat Burglar      |
+| Charging Paladin |
+| Cinder Crawler   |
+| Culling the Weak |
+| Cunning          |
+| Cursed Flesh     |
+| Dauthi Jackal    |
+| Death's Duet     |
+| Dizzying Gaze    |
+| Elvish Berserker |
+| Fade Away        |
+| Furnace Brood    |
+| Grollub          |
++------------------+
+20 rows in set (0.00 sec)
+
++-------------------------+------------------+--------------------------------------+----------+--------------+
+| cardName                | setName          | retailerName                         | quantity | minimumPrice |
++-------------------------+------------------+--------------------------------------+----------+--------------+
+| Brimaz, King of Oreskos | Born of the Gods | Book and Game Company/Uncle's Game's |        1 |        19.48 |
+| Brimaz, King of Oreskos | Born of the Gods | Borderlands-Creative Megumi          |        8 |        10.51 |
++-------------------------+------------------+--------------------------------------+----------+--------------+
+2 rows in set (0.18 sec)
+
+Query OK, 23721 rows affected (0.34 sec)
+Records: 23721  Duplicates: 0  Warnings: 0
+
+Query OK, 5000 rows affected (0.10 sec)
+Records: 5000  Duplicates: 0  Warnings: 0
+
+Query OK, 5000 rows affected (0.11 sec)
+Records: 5000  Duplicates: 0  Warnings: 0
+
+Query OK, 23721 rows affected (0.31 sec)
+Records: 23721  Duplicates: 0  Warnings: 0
+
++--------------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| cardName                 | setName          | flavorText                                                                                                                                                                                                                           |
++--------------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Aerie Worshippers        | Born of the Gods | They can conjure stars from a clear sky.                                                                                                                                                                                             |
+| Akroan Conscriptor       | Born of the Gods | "The time to serve is now."                                                                                                                                                                                                          |
+| Akroan Phalanx           | Born of the Gods | Shields up, spears out, heels set, hearts firm.                                                                                                                                                                                      |
+| Akroan Skyguard          | Born of the Gods | "Trust me. When you have earned a god's favor, you'll know."                                                                                                                                                                         |
+| Archetype of Aggression  | Born of the Gods | "Did Purphoros bless Maikal because of his rage? Or did Maikal's rage blossom after he'd been blessed? Only the gods know."
+
+—Eocles, oracle of Purphoros                                                                           |
+| Archetype of Courage     | Born of the Gods | "It has been my experience that soldiers most fervently follow generals who lead by example."
+
+—Elspeth                                                                                                                             |
+| Archetype of Endurance   | Born of the Gods | Despite its fearsome stature, it is as elusive as a shadow, circling round to stalk those who presume to hunt it.                                                                                                                    |
+| Archetype of Finality    | Born of the Gods | She sees mortals not as they wish to be, but as what they will become.                                                                                                                                                               |
+| Archetype of Imagination | Born of the Gods | "Is it not the embodiment of our aspirations?"
+
+—Prokopios, astronomer of Meletis                                                                                                                                                   |
+| Ashiok's Adept           | Born of the Gods | "Every nightmare is a caged bird that yearns to be set free."
+
+—Ashiok, Nightmare Weaver                                                                                                                                            |
+| Aspect of Hydra          | Born of the Gods | "Even alone I outnumber you."                                                                                                                                                                                                        |
+| Asphyxiate               | Born of the Gods | "Some poisons enter through the blood. Some are ingested. Some are inhaled. All ways through which mortals draw strength are paths for poison."
+
+—Agathe, priest of Pharika                                                         |
+| Bile Blight              | Born of the Gods | Not an arrow loosed, javelin thrown, nor sword raised. None were needed.                                                                                                                                                             |
+| Black Oak of Odunos      | Born of the Gods | Phenax promised the newly dead souls they would be spared from Erebos. In this, he did not lie.                                                                                                                                      |
+| Bolt of Keranos          | Born of the Gods | The breakthroughs granted by Keranos, god of epiphany, can be surprisingly literal.                                                                                                                                                  |
+| Charging Badger          | Born of the Gods | "If the hierarchies of nature were determined by ferocity alone, the badger would be lord of the beasts."
+
+—Anthousa of Setessa                                                                                                     |
+| Claim of Erebos          | Born of the Gods | Priests of Erebos give an occasional reminder to mortals who have forgotten their mortality.                                                                                                                                         |
+| Crypsis                  | Born of the Gods | Tritons borrow the camouflage of their oceanic prey to become predators on land.                                                                                                                                                     |
+| Culling Mark             | Born of the Gods | Hunt without Nylea's leave and you may find yourself the next quarry.                                                                                                                                                                |
+| Cyclops of One-Eyed Pass | Born of the Gods | The Champion armed herself to face the cyclops, heedless of her companions' despair.
+
+"How will you defeat it with only one spear?" asked young Althemone.
+
+The Champion raised her weapon. "It has but one eye."
+
+—The Theriad   |
++--------------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+20 rows in set (0.01 sec)
+
++-------------------------------------------------------------------------------------------+----------------+------+--------+------------+
+| deckName                                                                                  | playerUsername | wins | losses | birthday   |
++-------------------------------------------------------------------------------------------+----------------+------+--------+------------+
+| Cockney Vijayanagar'S Machined Boozer Fireproofs Antechambers Lobbies Sickle              | tad219         |  979 |      6 | 1996-01-24 |
+| Cockney Vijayanagar'S Machined Boozer Fireproofs Antechambers Lobbies Sickle              | thinskinned467 |  950 |      6 | 2004-01-19 |
+| Cockney Vijayanagar'S Machined Boozer Fireproofs Antechambers Lobbies Sickle              | caning339      |  917 |      8 | 1997-11-16 |
+| Stalin'S Beneficent Khayyam                                                               | tad219         |  979 |      6 | 1996-01-24 |
+| Stalin'S Beneficent Khayyam                                                               | thinskinned467 |  950 |      6 | 2004-01-19 |
+| Stalin'S Beneficent Khayyam                                                               | caning339      |  917 |      8 | 1997-11-16 |
+| Nominee                                                                                   | tad219         |  979 |      6 | 1996-01-24 |
+| Nominee                                                                                   | thinskinned467 |  950 |      6 | 2004-01-19 |
+| Nominee                                                                                   | caning339      |  917 |      8 | 1997-11-16 |
+| Heartiness'S Throne'S Leeward'S Unsnarling                                                | tad219         |  979 |      6 | 1996-01-24 |
+| Heartiness'S Throne'S Leeward'S Unsnarling                                                | thinskinned467 |  950 |      6 | 2004-01-19 |
+| Heartiness'S Throne'S Leeward'S Unsnarling                                                | caning339      |  917 |      8 | 1997-11-16 |
+| Worshipful Advertised Tipperary                                                           | tad219         |  979 |      6 | 1996-01-24 |
+| Worshipful Advertised Tipperary                                                           | thinskinned467 |  950 |      6 | 2004-01-19 |
+| Worshipful Advertised Tipperary                                                           | caning339      |  917 |      8 | 1997-11-16 |
+| Satiates Skier'S Tilt Analogies Trivially Deliberation Libra'S                            | tad219         |  979 |      6 | 1996-01-24 |
+| Satiates Skier'S Tilt Analogies Trivially Deliberation Libra'S                            | thinskinned467 |  950 |      6 | 2004-01-19 |
+| Satiates Skier'S Tilt Analogies Trivially Deliberation Libra'S                            | caning339      |  917 |      8 | 1997-11-16 |
+| Slavic Tintinnabulation Professorial Ignore Reales Wampum Spouse'S Attainment'S Junctions | tad219         |  979 |      6 | 1996-01-24 |
+| Slavic Tintinnabulation Professorial Ignore Reales Wampum Spouse'S Attainment'S Junctions | thinskinned467 |  950 |      6 | 2004-01-19 |
++-------------------------------------------------------------------------------------------+----------------+------+--------+------------+
+20 rows in set (0.00 sec)
+
++-----------------------+---------------------------------------------------------------+
+| retailerName          | location                                                      |
++-----------------------+---------------------------------------------------------------+
+| Game Depot            | Tempe, AZ 3136 S. McClintock Drive #11 United States          |
+| Pop Culture Paradise  | Tempe, AZ 707 S Forest Ave Suite A United States              |
+| Samurai Comics        | Phoenix, AZ 5024 7th st. United States                        |
+| Samurai Comics - West | Phoenix, AZ 10720 W. Indian School Road # 61 United States    |
+| Active Imagination    | Albuquerque, NM 11200 Montgomery BLVD NE STE 10 United States |
++-----------------------+---------------------------------------------------------------+
+5 rows in set (0.00 sec)
+
++---------------------------+--------------------------------+----------------------------+-------+----------+
+| cardName                  | setName                        | retailerName               | price | quantity |
++---------------------------+--------------------------------+----------------------------+-------+----------+
+| Avizoa                    | Weatherlight                   | Collector's Hideaway       | 10.24 |       18 |
+| Maze of Ith               | From the Vault: Realms         | Borderland Relics          | 18.81 |       20 |
+| Wurmcoil Engine           | Scars of Mirrodin              | Vintage Stock-Fayetteville | 17.77 |       19 |
+| Chromeshell Crab          | Magic: The Gathering-Commander | Pop Culture Paradise       | 10.29 |       18 |
+| Scion of Vitu-Ghazi       | Dragon's Maze                  | A Hidden Fortress          | 10.10 |       19 |
+| Righteousness             | Limited Edition Beta           | California Card Company    | 10.31 |       19 |
+| Dreamborn Muse            | Magic: The Gathering-Commander | Collector's Paradise       | 10.10 |       19 |
+| Sheoldred, Whispering One | New Phyrexia                   | Comic Cult                 | 19.58 |       19 |
+| Oath of Druids            | Exodus                         | Comic Cult                 | 10.17 |       19 |
+| Curse of the Swine        | Theros                         | Game Kastle                | 10.31 |       19 |
+| Blinding Light            | Starter 1999                   | Game Kastle                | 10.24 |       18 |
+| Devout Invocation         | Magic 2014 Core Set            | Three J's Sportscards      | 18.41 |       19 |
+| Master Healer             | Urza's Destiny                 | Stonebridge Games          | 10.45 |       18 |
+| Descent into Madness      | Avacyn Restored                | Stonebridge Games          | 18.10 |       18 |
+| Apprentice Necromancer    | Urza's Destiny                 | Arkham Asylum              | 10.29 |       19 |
+| Beast of Burden           | Urza's Legacy                  | Cave Comics                | 10.25 |       18 |
+| Gifts Ungiven             | From the Vault: Exiled         | Anthem Games               | 13.35 |       19 |
+| Thunderblade Charge       | Future Sight                   | Collector's Paradise, A    | 10.36 |       18 |
+| Grand Abolisher           | Magic 2012                     | Comics Direct              | 10.11 |       20 |
+| Jace Beleren              | Magic 2011                     | Game Masters Guild         | 12.00 |       18 |
++---------------------------+--------------------------------+----------------------------+-------+----------+
+20 rows in set (0.00 sec)
+
++------------------+------------+--------------------------+
+| playerUsername   | datePosted | cardName                 |
++------------------+------------+--------------------------+
+| septicidal238    | 2009-01-24 | Mimic Vat                |
+| septicidal238    | 2009-01-24 | Brutalizer Exarch        |
+| septicidal238    | 2009-01-24 | Phyrexian Slayer         |
+| septicidal238    | 2009-01-24 | Vesuva                   |
+| commorant465     | 2009-08-08 | Dingus Egg               |
+| commorant465     | 2009-08-08 | Doomsday                 |
+| commorant465     | 2009-08-08 | Oros, the Avenger        |
+| commorant465     | 2009-08-08 | Forest                   |
+| poppycock404     | 2009-08-09 | Plains                   |
+| poppycock404     | 2009-08-09 | Walk the Aeons           |
+| poppycock404     | 2009-08-09 | Consume Spirit           |
+| poppycock404     | 2009-08-09 | Voidmage Prodigy         |
+| chi228           | 2009-06-17 | Boris Devilboon          |
+| chi228           | 2009-06-17 | Forest                   |
+| chi228           | 2009-06-17 | Spinal Villain           |
+| chi228           | 2009-06-17 | Phantasmal Fiend         |
+| swallowtailed478 | 2009-07-03 | Deranged Hermit          |
+| swallowtailed478 | 2009-07-03 | Nemesis Trap             |
+| swallowtailed478 | 2009-07-03 | Pestilent Kathari        |
+| swallowtailed478 | 2009-07-03 | Blade of the Sixth Pride |
++------------------+------------+--------------------------+
+20 rows in set (0.01 sec)
+
++-------------------------+
+| setName                 |
++-------------------------+
+| Exodus                  |
+| Mirrodin                |
+| The Dark                |
+| Betrayers of Kamigawa   |
+| Dark Ascension          |
+| Mirage                  |
+| Ravnica: City of Guilds |
+| Weatherlight            |
+| Eighth Edition          |
+| Vanguard                |
+| Limited Edition Alpha   |
+| Champions of Kamigawa   |
+| Theros                  |
+| Alliances               |
+| Chronicles              |
+| Guildpact               |
+| Born of the Gods        |
+| Dragon's Maze           |
+| New Phyrexia            |
+| Visions                 |
++-------------------------+
+20 rows in set (0.05 sec)
+
++---------------------------------+------------------------+
+| retailerName                    | averageMythicRarePrice |
++---------------------------------+------------------------+
+| 5 D's Collectibles & Gifts      |              10.040000 |
+| 9th Zone                        |               7.428000 |
+| A & N Sports Cards Inc          |              12.313333 |
+| A Hidden Fortress               |               9.551667 |
+| A+ Comics & Collectibles        |               6.120000 |
+| A-1 Comics Inc.                 |               5.935000 |
+| A-1 Comics Inc. - Roseville     |              11.790000 |
+| Abington Games                  |               8.290000 |
+| Active Imagination              |               7.280000 |
+| Adventures in Gaming            |               9.410000 |
+| AK Comics                       |               7.116667 |
+| Alans                           |               5.756667 |
+| Alien Worlds                    |               8.755000 |
+| All American #1                 |              15.626667 |
+| All American #2                 |              10.210000 |
+| All American Collectibles       |              14.140000 |
+| All Star Comics                 |              11.216667 |
+| All Things Fun                  |              10.015000 |
+| Alternate Universes             |               4.880000 |
+| Alternate Universes - Blue Bell |               8.190000 |
++---------------------------------+------------------------+
+20 rows in set (0.02 sec)
+
++-------------------------+--------------+
+| setName                 | flavorAmount |
++-------------------------+--------------+
+| Tenth Edition           |          313 |
+| Eighth Edition          |          290 |
+| Seventh Edition         |          278 |
+| Ninth Edition           |          267 |
+| Fifth Edition           |          254 |
+| Ice Age                 |          239 |
+| Tempest                 |          239 |
+| Mirage                  |          237 |
+| Mercadian Masques       |          233 |
+| Shadowmoor              |          222 |
+| Urza's Saga             |          221 |
+| Classic Sixth Edition   |          219 |
+| Onslaught               |          216 |
+| Innistrad               |          213 |
+| Odyssey                 |          206 |
+| Commander 2013 Edition  |          205 |
+| Invasion                |          204 |
+| Ravnica: City of Guilds |          202 |
+| Shards of Alara         |          193 |
+| Return to Ravnica       |          191 |
++-------------------------+--------------+
+20 rows in set (0.03 sec)
+
++------------------+
+| cardName         |
++------------------+
+| Æther Tide       |
+| Allay            |
+| Anarchist        |
+| Angelic Blessing |
+| Avenging Druid   |
+| Bequeathal       |
+| Carnophage       |
+| Cat Burglar      |
+| Charging Paladin |
+| Cinder Crawler   |
+| Culling the Weak |
+| Cunning          |
+| Cursed Flesh     |
+| Dauthi Jackal    |
+| Death's Duet     |
+| Dizzying Gaze    |
+| Elvish Berserker |
+| Fade Away        |
+| Furnace Brood    |
+| Grollub          |
++------------------+
+20 rows in set (0.00 sec)
+
++-------------------------+------------------+--------------------------------------+----------+--------------+
+| cardName                | setName          | retailerName                         | quantity | minimumPrice |
++-------------------------+------------------+--------------------------------------+----------+--------------+
+| Brimaz, King of Oreskos | Born of the Gods | Book and Game Company/Uncle's Game's |        1 |        19.48 |
+| Brimaz, King of Oreskos | Born of the Gods | Borderlands-Creative Megumi          |        8 |        10.51 |
++-------------------------+------------------+--------------------------------------+----------+--------------+
+2 rows in set (0.02 sec)
+
+Query OK, 23721 rows affected (0.26 sec)
+Records: 23721  Duplicates: 0  Warnings: 0
+
+Query OK, 5000 rows affected (0.09 sec)
+Records: 5000  Duplicates: 0  Warnings: 0
+
+Query OK, 5000 rows affected (0.08 sec)
+Records: 5000  Duplicates: 0  Warnings: 0
+
+Query OK, 23721 rows affected (0.23 sec)
+Records: 23721  Duplicates: 0  Warnings: 0
+
++----------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Query_ID | Duration   | Query                                                                                                                                                                                                                                                    |
++----------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|        1 | 0.00005500 | SET profiling_history_size = 100                                                                                                                                                                                                                         |
+|        2 | 0.00378600 | --
+
+SELECT cardName, setName, flavorText 
+FROM Cards 
+WHERE setName = 'Born of the Gods' AND LENGTH(flavorText) > 0 LIMIT 20                                                                                                                             |
+|        3 | 0.00187200 | SELECT Decks.deckName, Players.playerUsername, Players.wins, Players.losses, Players.birthday 
+FROM Decks, Players 
+WHERE Players.wins > 900 AND Players.losses < 10 AND Players.birthday > '1990-01-01' AND Decks.creationDate > '2000-01-01' LIMIT 20  |
+|        4 | 0.00003700 | SELECT Retailers.retailerName, Retailers.location 
+FROM Retailers 
+WHERE Retailers.rating > 4.0 AND Retailers.location LIKE 'Albuquerque%' OR Retailers.location LIKE 'Phoenix%' OR Retailers.location LIKE 'Tempe%'                                     |
+|        5 | 0.00411500 | --
+SELECT cards.cardName, cards.setName, rt.retailerName, se.price, se.quantity 
+FROM Retailers rt 
+JOIN Sells se ON rt.retailerName = se.retailerName 
+JOIN Cards cards ON se.cardId = cards.cardId 
+WHERE se.price > 10 AND se.quantity >= 18 LIMIT 20 |
+|        6 | 0.00741800 | SELECT Players.playerUsername, Blogs.datePosted, Cards.cardName 
+FROM Players 
+NATURAL JOIN Blogs 
+NATURAL JOIN TalkAboutCard 
+NATURAL JOIN Cards 
+WHERE Blogs.datePosted > '2009-01-01' LIMIT 20                                                        |
+|        7 | 0.05140900 | --
+SELECT setName FROM Cards
+UNION 
+SELECT setName FROM Sets LIMIT 20                                                                                                                                                                                    |
+|        8 | 0.01460500 | --
+SELECT retailerName, AVG(price) as averageMythicRarePrice 
+FROM Sells NATURAL JOIN Cards 
+WHERE Cards.rarity = 'Mythic Rare' 
+GROUP BY retailerName LIMIT 20                                                                                          |
+|        9 | 0.03360200 | --
+SELECT setName, COUNT(flavorText) AS flavorAmount
+FROM Cards  
+WHERE LENGTH(flavorText) > 0  
+GROUP BY setName 
+ORDER BY flavorAmount DESC LIMIT 20                                                                                                   |
+|       10 | 0.00045400 | --
+SELECT DISTINCT cardName
+FROM Cards
+WHERE rarity = 'Common' LIMIT 20                                                                                                                                                                                  |
+|       11 | 0.18496900 | --
+SELECT Cards.cardName, Cards.setName, retailerName, quantity, MIN(price) as minimumPrice 
+FROM Sells NATURAL JOIN Cards 
+WHERE Cards.cardName = 'Brimaz, King of Oreskos' 
+GROUP BY retailerName                                                      |
+|       12 | 0.33769300 | CREATE INDEX cardNameIndex ON Cards(cardName)                                                                                                                                                                                                            |
+|       13 | 0.09829700 | CREATE INDEX winIndex ON Players(wins)                                                                                                                                                                                                                   |
+|       14 | 0.10634300 | CREATE INDEX lossIndex ON Players(losses)                                                                                                                                                                                                                |
+|       15 | 0.31256900 | CREATE INDEX rarityIndex ON Cards(rarity)                                                                                                                                                                                                                |
+|       16 | 0.00390300 | --
+
+SELECT cardName, setName, flavorText 
+FROM Cards 
+WHERE setName = 'Born of the Gods' AND LENGTH(flavorText) > 0 LIMIT 20                                                                                                                             |
+|       17 | 0.00081900 | SELECT Decks.deckName, Players.playerUsername, Players.wins, Players.losses, Players.birthday 
+FROM Decks, Players 
+WHERE Players.wins > 900 AND Players.losses < 10 AND Players.birthday > '1990-01-01' AND Decks.creationDate > '2000-01-01' LIMIT 20  |
+|       18 | 0.00004000 | SELECT Retailers.retailerName, Retailers.location 
+FROM Retailers 
+WHERE Retailers.rating > 4.0 AND Retailers.location LIKE 'Albuquerque%' OR Retailers.location LIKE 'Phoenix%' OR Retailers.location LIKE 'Tempe%'                                     |
+|       19 | 0.00405600 | --
+SELECT cards.cardName, cards.setName, rt.retailerName, se.price, se.quantity 
+FROM Retailers rt 
+JOIN Sells se ON rt.retailerName = se.retailerName 
+JOIN Cards cards ON se.cardId = cards.cardId 
+WHERE se.price > 10 AND se.quantity >= 18 LIMIT 20 |
+|       20 | 0.00735200 | SELECT Players.playerUsername, Blogs.datePosted, Cards.cardName 
+FROM Players 
+NATURAL JOIN Blogs 
+NATURAL JOIN TalkAboutCard 
+NATURAL JOIN Cards 
+WHERE Blogs.datePosted > '2009-01-01' LIMIT 20                                                        |
+|       21 | 0.05038200 | --
+SELECT setName FROM Cards
+UNION 
+SELECT setName FROM Sets LIMIT 20                                                                                                                                                                                    |
+|       22 | 0.01448200 | --
+SELECT retailerName, AVG(price) as averageMythicRarePrice 
+FROM Sells NATURAL JOIN Cards 
+WHERE Cards.rarity = 'Mythic Rare' 
+GROUP BY retailerName LIMIT 20                                                                                          |
+|       23 | 0.03306800 | --
+SELECT setName, COUNT(flavorText) AS flavorAmount
+FROM Cards  
+WHERE LENGTH(flavorText) > 0  
+GROUP BY setName 
+ORDER BY flavorAmount DESC LIMIT 20                                                                                                   |
+|       24 | 0.00048300 | --
+SELECT DISTINCT cardName
+FROM Cards
+WHERE rarity = 'Common' LIMIT 20                                                                                                                                                                                  |
+|       25 | 0.01859900 | --
+SELECT Cards.cardName, Cards.setName, retailerName, quantity, MIN(price) as minimumPrice 
+FROM Sells NATURAL JOIN Cards 
+WHERE Cards.cardName = 'Brimaz, King of Oreskos' 
+GROUP BY retailerName                                                      |
+|       26 | 0.25619700 | DROP INDEX cardNameIndex ON Cards                                                                                                                                                                                                                        |
+|       27 | 0.09147800 | DROP INDEX winIndex ON Players                                                                                                                                                                                                                           |
+|       28 | 0.08524100 | DROP INDEX lossIndex ON Players                                                                                                                                                                                                                          |
+|       29 | 0.22710300 | DROP INDEX rarityIndex ON Cards                                                                                                                                                                                                                          |
++----------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+29 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> quit
