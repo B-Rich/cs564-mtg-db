@@ -32,6 +32,38 @@ function fontAwesome($iconName){
 
 }
 
+function searchIcon(){
+	return glyphicon('search');
+}
+
+function addIcon(){
+	return '<i style="color: green;" class="fa fa-plus-square"></i>';
+}
+
+function updateIcon(){
+	return '<i style="color: gold;" class="fa fa-refresh"></i>';
+}
+
+function deleteIcon(){
+	return '<i style="color: red;" class="fa fa-minus-square"></i>';
+}
+
+function backIcon(){
+	return '<i style="color: blue;" class="fa fa-arrow-circle-left"></i>';
+}
+
+function listIcon(){
+	return glyphicon('th-list');
+}
+
+function backToQueryButton($href){
+	$icon = backIcon();
+	return <<<HTML
+	<a class="btn btn-default btn-lg" href="cards.php">$icon Back to Query</a>
+HTML;
+}
+
+
 function panel($panelHeading,$panelBody='',$table='',$class='default'){
 	$panelBodyDiv = '';
 	if($panelBody){
