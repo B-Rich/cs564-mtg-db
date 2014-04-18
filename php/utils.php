@@ -86,10 +86,14 @@ HTML;
     return alert($content,'warning',True);
 }
 
-function dbSuccess(){
+function dbSuccess($sql){
     $content = <<<HTML
 <strong>Hooray!</strong>
-<p> The query was successful, here are the results:
+<p> The query 
+<pre>
+$sql
+</pre>
+was successful, here are the results:
 </p>
 HTML;
     return alert($content,'success',True);

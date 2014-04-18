@@ -5,16 +5,38 @@
             require_once("heading.php"); 
             require_once("bootstrap.php");
             require_once("utils.php");
-            $cardName = $_POST["cardName"];
     ?>
     <body>
         <div class="container">
         	<?php
+        		$conditionBlock = array();
+        		// Initialize with attributes we always want.
+        		$sAttrArr = array('cardName','setName');
         		echo backToQueryButton('cards.php');
+        		foreach ($_POST as $key => $value) {
+        			if($key == 'rarity' and $value == 'Any'){
+        				// Means we don't add rarity to the where condition.
+        				continue;
+        			}
+        			if($value){
+        				$condition = " $key='$value' ";
+        				array_push($conditionBlock, $condition);
+        				array_push($sAttrArr,$key);
+        			}
+        		}
+        		$selectAttr = '';
+        		if(count($sAttrArr) > 0){
+        			$selectAttr = join(",",$sAttrArr);
+        		}
+        		$where = '';
+        		if(count($conditionBlock) > 0){
+        			// Join with AND.
+        			$where = "WHERE " . join("AND",$conditionBlock);	
+        		}
         		$sql = <<<QUERY
-SELECT cardName,setName 
+SELECT $selectAttr 
 FROM Cards 
-WHERE cardName='$cardName';
+$where;
 QUERY;
 				$r = $db->query($sql);
 				if(!$r){
@@ -26,12 +48,12 @@ QUERY;
 					return;
 				}
 				else {
-					echo dbSuccess();
+					echo dbSuccess($sql);
 				}
-				$columnNames = array('Card Name', 'Set Name');
+				$columnNames = $sAttrArr;
 		        $theadHTML = tableHeading($columnNames);
 		        $tableBody = '';
-		        $fields = array('cardName','setName');
+		        $fields = $sAttrArr;
 		        while ($row = $r->fetch_array()) {
 		            $tableBody = $tableBody . tableRowFromFields($row,$fields);
 		        }
