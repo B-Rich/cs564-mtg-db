@@ -14,12 +14,17 @@
         		$sAttrArr = array('cardName','setName');
         		echo backToQueryButton('cards.php');
         		foreach ($_POST as $key => $value) {
+        			if(stripos($key,'Range')){
+        				// Don't pick up the range dropdowns.
+        				continue;
+        			}
         			if($key == 'rarity' and $value == 'Any'){
         				// Means we don't add rarity to the where condition.
         				continue;
         			}
         			if($value){
-        				$condition = " $key='$value' ";
+        				$op = rangeOpStr($_POST[$key.'Range']);
+        				$condition = " $key$op'$value' ";
         				array_push($conditionBlock, $condition);
         				array_push($sAttrArr,$key);
         			}

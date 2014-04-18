@@ -42,7 +42,7 @@ HTML;
 
 function numberRangeDropdown($id){
     return <<<HTML
-    <select id="$id">
+    <select id="$id" name="$id">
         <option value="eq">
             &#61;
         </option>
@@ -60,6 +60,26 @@ function numberRangeDropdown($id){
         </option>
     </select>
 HTML;
+}
+
+function rangeOpStr($op){
+    switch ($op) {
+        case 'lt':
+            return '<';
+            break;
+        case 'lte':
+            return '<=';
+            break;
+        case 'gt':
+            return '>';
+            break;
+        case 'ge':
+            return '>=';
+            break;
+        default:
+            return "=";
+            break;
+    }
 }
 
 function dbError($sql,$db){

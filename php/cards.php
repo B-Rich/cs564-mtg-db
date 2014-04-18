@@ -29,7 +29,7 @@
                 <div class="tab-pane active" id="query">
                     <form role="form" action="cardQuery.php" method="post">
                         <p class="help-block">
-                            Most of the fields below are optional.
+                            All the fields below are optional.
                         </p>
                         <div class="form-group">
                             <label for="cardName">Card Name</label> <input class="form-control" id="cardName" name="cardName" placeholder="Grave Titan">
