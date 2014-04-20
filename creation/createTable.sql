@@ -63,10 +63,10 @@ CREATE TABLE Players(
     firstName       VARCHAR(20),
     lastName        VARCHAR(20),
     birthday        DATE,
-    wins            INT,
-    draws           INT,
-    losses          INT,
-    ranking         INT
+    wins            INT DEFAULT 0,
+    draws           INT DEFAULT 0,
+    losses          INT DEFAULT 0,
+    ranking         INT DEFAULT 999
 );
 
 CREATE TABLE Blogs(

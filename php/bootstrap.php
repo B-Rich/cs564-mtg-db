@@ -59,7 +59,7 @@ function listIcon(){
 function backToQueryButton($href){
 	$icon = backIcon();
 	return <<<HTML
-	<a class="btn btn-default btn-lg" href="cards.php">$icon Back to Query</a>
+	<a class="btn btn-default btn-lg" href="$href">$icon Back to Query</a>
 HTML;
 }
 

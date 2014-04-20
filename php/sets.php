@@ -26,7 +26,6 @@
         $tableHTML = table($theadHTML,$tableBody);
         echo $tableHTML;
         ?>
-        <p>Boom!</p>
     </div>
 </body>
 </html>

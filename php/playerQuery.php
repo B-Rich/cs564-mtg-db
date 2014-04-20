@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <?php 
-            $title = 'MTG DB - Card Search Results';
+            $title = 'MTG DB - Player Search Results';
             require_once("heading.php"); 
             require_once("bootstrap.php");
             require_once("utils.php");
@@ -10,28 +10,17 @@
         <div class="container">
         	<?php
         		$conditionBlock = array();
-        		// Initialize with attributes we always want.
-        		$sAttrArr = array('cardName','setName');
-        		echo backToQueryButton('cards.php');
+        		echo backToQueryButton('players.php');
         		foreach ($_POST as $key => $value) {
         			if(stripos($key,'Range')){
         				// Don't pick up the range dropdowns.
-        				continue;
-        			}
-        			if($key == 'rarity' and $value == 'Any'){
-        				// Means we don't add rarity to the where condition.
         				continue;
         			}
         			if($value){
         				$op = rangeOpStr($_POST[$key.'Range']);
         				$condition = " $key$op'$value' ";
         				array_push($conditionBlock, $condition);
-        				array_push($sAttrArr,$key);
         			}
-        		}
-        		$selectAttr = '';
-        		if(count($sAttrArr) > 0){
-        			$selectAttr = join(",",$sAttrArr);
         		}
         		$where = '';
         		if(count($conditionBlock) > 0){
@@ -39,8 +28,8 @@
         			$where = "WHERE " . join("AND",$conditionBlock);	
         		}
         		$sql = <<<QUERY
-SELECT $selectAttr 
-FROM Cards 
+SELECT * 
+FROM Players 
 $where;
 QUERY;
 				$r = $db->query($sql);
@@ -55,10 +44,10 @@ QUERY;
 				else {
 					echo dbSuccess($sql);
 				}
-				$columnNames = $sAttrArr;
-		        $theadHTML = tableHeading($columnNames);
+				$columnNames = array('Username','First Name','Last Name','Birthday','Wins','Losses','Draws','Ranking');
+                $theadHTML = tableHeading($columnNames);
 		        $tableBody = '';
-		        $fields = $sAttrArr;
+		        $fields = array('playerUsername','firstName','lastName','birthday','wins','losses','draws','ranking');
 		        while ($row = $r->fetch_array()) {
 		            $tableBody = $tableBody . tableRowFromFields($row,$fields);
 		        }

@@ -25,53 +25,53 @@
 			</ul><!-- Tab panes -->
 			<div class="tab-content">
 				<div class="tab-pane active" id="query">
-					<form role="form">
+					<form role="form"  action="playerQuery.php" method="post">
 						<p class="help-block">
 							The fields below are optional.
 						</p>
 						<div class="form-group">
-							<label for="username">Username</label> <input class="form-control" id="username" placeholder="billysmith">
+							<label for="playerUsername">Username</label> <input class="form-control" id="playerUsername" name="playerUsername" placeholder="billysmith">
 						</div>
 						<div class="form-group">
-							<label for="firstName">First Name</label> <input class="form-control" id="firstName" placeholder="Billy">
+							<label for="firstName">First Name</label> <input class="form-control" id="firstName" name="firstName" placeholder="Billy">
 						</div>
 						<div class="form-group">
-							<label for="lastName">Last Name</label> <input class="form-control" id="lastName" placeholder="Smith">
+							<label for="lastName">Last Name</label> <input class="form-control" id="lastName" name="lastName" placeholder="Smith">
 						</div>
 						<div class="form-group">
-							<label for="birthday">Birthday</label> <input type="date" class="form-control" id="birthday">
+							<label for="birthday">Birthday</label> <input type="date" class="form-control" id="birthday" name="birthday">
 						</div>
 						<div class="form-group form-inline">
-							<label for="ranking">Ranking</label> <input type="number" class="form-control" id="ranking" min="0"> <?php echo numberRangeDropdown("rankingRange"); ?>
+							<label for="ranking">Ranking</label> <input type="number" class="form-control" id="ranking" name="ranking" min="0"> <?php echo numberRangeDropdown("rankingRange"); ?>
 						</div>
 						<div class="form-group form-inline">
-							<label for="wins">Wins</label> <input type="number" class="form-control" id="wins" min="0"> <?php echo numberRangeDropdown("winsRange"); ?>
+							<label for="wins">Wins</label> <input type="number" class="form-control" id="wins" name="wins" min="0"> <?php echo numberRangeDropdown("winsRange"); ?>
 						</div>
 						<div class="form-group form-inline">
-							<label for="losses">Losses</label> <input type="number" class="form-control" id="losses" min="0"> <?php echo numberRangeDropdown("lossesRange"); ?>
+							<label for="losses">Losses</label> <input type="number" class="form-control" id="losses" name="losses" min="0"> <?php echo numberRangeDropdown("lossesRange"); ?>
 						</div>
 						<div class="form-group form-inline">
-							<label for="draws">Draws</label> <input type="number" class="form-control" id="draws" min="0"> <?php echo numberRangeDropdown("drawsRange"); ?>
+							<label for="draws">Draws</label> <input type="number" class="form-control" id="draws" name="draws" min="0"> <?php echo numberRangeDropdown("drawsRange"); ?>
 						</div>
 						<button type="submit" class="btn btn-primary btn-lg">Search for Players</button>
 					</form>
 				</div>
 				<div class="tab-pane" id="add">
-					<form role="form">
+					<form role="form" action="playerAdd.php" method="post">
 						<p class="help-block">
 							Username is the only required field.
 						</p>
 						<div class="form-group">
-							<label for="username">Username</label> <input class="form-control" id="username" placeholder="billysmith" required>
+							<label for="playerUsername">Username</label> <input class="form-control" id="playerUsername" name="playerUsername" placeholder="billysmith" required>
 						</div>
 						<div class="form-group">
-							<label for="firstName">First Name</label> <input class="form-control" id="firstName" placeholder="Billy">
+							<label for="firstName">First Name</label> <input class="form-control" id="firstName" name="firstName" placeholder="Billy">
 						</div>
 						<div class="form-group">
-							<label for="lastName">Last Name</label> <input class="form-control" id="lastName" placeholder="Smith">
+							<label for="lastName">Last Name</label> <input class="form-control" id="lastName" name="lastName" placeholder="Smith">
 						</div>
 						<div class="form-group">
-							<label for="birthday">Birthday</label> <input type="date" class="form-control" id="birthday">
+							<label for="birthday">Birthday</label> <input type="date" class="form-control" id="birthday" name="birthday">
 						</div>
 						<button type="submit" class="btn btn-success btn-lg">Add Player</button>
 					</form>

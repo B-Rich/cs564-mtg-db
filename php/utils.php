@@ -83,12 +83,16 @@ function rangeOpStr($op){
 }
 
 function dbError($sql,$db){
+    $errorStr = $db->error;
+    $code = $db->errno;
     $content = <<<HTML
 <strong>Error</strong>
 <p>There was an error with the query:
 <pre>
 $sql
 </pre>
+$errorStr
+($code)
 </p>
 HTML;
     return alert($content,'danger',True);
@@ -113,7 +117,7 @@ function dbSuccess($sql){
 <pre>
 $sql
 </pre>
-was successful, here are the results:
+was successful.
 </p>
 HTML;
     return alert($content,'success',True);
