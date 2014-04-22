@@ -25,7 +25,7 @@
 			</ul><!-- Tab panes -->
 			<div class="tab-content">
 				<div class="tab-pane active" id="query">
-					<form role="form">
+					<form role="form" action="retailerQuery.php" method="post">
 						<p class="help-block">
 							The fields below are optional.
 						</p>
@@ -39,7 +39,7 @@
 					</form>
 				</div>
 				<div class="tab-pane" id="add">
-					<form role="form">
+					<form role="form" action="retailerAdd.php" method="post">
 						<p class="help-block">
 							All fields are required.
 						</p>

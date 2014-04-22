@@ -24,7 +24,12 @@
         			}
         			if($value){
         				$op = rangeOpStr($_POST[$key.'Range']);
-        				$condition = " $key$op'$value' ";
+                        if($key == 'flavorText' or $key == 'ruleText'){
+                            $condition = " $key LIKE '%$value%' ";    
+                        }
+                        else{
+                            $condition = " $key$op'$value' ";    
+                        }
         				array_push($conditionBlock, $condition);
         				array_push($sAttrArr,$key);
         			}

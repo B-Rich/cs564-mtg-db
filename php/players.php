@@ -77,7 +77,11 @@
 					</form>
 				</div>
 				<div class="tab-pane" id="update">
-					Update
+					<p class="help-block">
+							Operations that update the Player table.
+					</p>
+					<a class="btn btn-danger btn-lg" href="playerRankReset.php">Reset player rankings</a>
+					<a class="btn btn-primary btn-lg" href="playerCalcRanks.php">Calculate player rankings</a>
 				</div>
 				<div class="tab-pane" id="delete">
 					Delete
