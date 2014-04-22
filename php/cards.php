@@ -11,20 +11,7 @@
             <h1>
                 Cards
             </h1><!-- Nav tabs -->
-            <ul class="nav nav-tabs nav-justified">
-                <li class="active">
-                    <a href="#query" data-toggle="tab"><?php echo searchIcon(); ?> Query</a>
-                </li>
-                <li>
-                    <a href="#add" data-toggle="tab"><?php echo addIcon(); ?> Add</a>
-                </li>
-                <li>
-                    <a href="#update" data-toggle="tab"><?php echo updateIcon(); ?> Update</a>
-                </li>
-                <li>
-                    <a href="#delete" data-toggle="tab"><?php echo deleteIcon(); ?> Delete</a>
-                </li>
-            </ul><!-- Tab panes -->
+            <?php echo dbTabs() ?><!-- Tab panes -->
             <div class="tab-content">
                 <div class="tab-pane active" id="query">
                     <form role="form" action="cardQuery.php" method="post">

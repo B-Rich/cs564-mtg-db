@@ -122,4 +122,49 @@ was successful.
 HTML;
     return alert($content,'success',True);
 }
+
+function dbTabs(){
+    $queryClass = '';
+    $addClass = '';
+    $updateClass = '';
+    $deleteClass = '';
+    $action = $_GET['action'];
+    switch ($action) {
+        case '$query':
+            $queryClass = 'active';
+            break;
+        case 'add':
+            $addClass = 'active';
+            break;
+        case 'update':
+            $updateClass = 'active';
+            break;
+        case 'delete':
+            $deleteClass = 'active';
+            break;
+        default:
+            $queryClass = 'active';
+            break;
+    }
+    $si = searchIcon();
+    $ai = addIcon();
+    $ui = updateIcon();
+    $di = deleteIcon();
+    return <<<HTML
+    <ul class="nav nav-tabs nav-justified">
+                <li class="$queryClass">
+                    <a href="#query" data-toggle="tab">$si Query</a>
+                </li>
+                <li class="$addClass">
+                    <a href="#add" data-toggle="tab">$ai Add</a>
+                </li>
+                <li class="$updateClass">
+                    <a href="#update" data-toggle="tab">$ui Update</a>
+                </li>
+                <li class="$deleteClass">
+                    <a href="#delete" data-toggle="tab">$di Delete</a>
+                </li>
+    </ul>
+HTML;
+}
 ?>
