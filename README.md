@@ -34,6 +34,8 @@ Insert functionality is somewhat more straight-forward than the other operations
 
 ### Update functionality 
 
+### Delete functionality
+
 
 
 
