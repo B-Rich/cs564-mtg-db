@@ -1,5 +1,6 @@
 cs564-mtg-db
 ============
+**By Lucas Nunno**
 
 Final project for CS564: Introduction to Databases.
 
