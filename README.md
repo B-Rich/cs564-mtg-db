@@ -21,17 +21,29 @@ After a query or modification is sent to the database, the results page will sho
 ### Query functionality
 Queries are performed on each category. For example, the interface for cards allows the user to search the Cards table and provide conditions that the DBMS will filter rows in the table based on. These conditions are specified by the user using the web form provided in the given "Query" tab.
 
-In the backend, these web form values are posted to a query results page where PHP translates fields that are provided to an SQL query. An interesting feature I've provided is allowing range values, for example power or toughness for a creature can be provided and then the dropdown allows the user to select the range for these values (=,<,>,<=,>=). This functionality is provided when other numerical values are needed for queries as well.
+In the backend, these web form values are posted to a query results page where PHP translates fields that are provided to an SQL query. 
+
+An interesting feature I've provided is allowing range values, for example power or toughness for a creature can be provided and then the dropdown allows the user to select the range for these values (=,<,>,<=,>=). This functionality is provided when other numerical values are needed for queries as well.
+
+Another notable feature that I've provided is for queries on fields that may have a large amount of text (for example, Rule Text, Flavor Text for Cards or Location for Retailers) are automatically converted to query on the value that the user has input as a LIKE statement. For example, if the user queries for "Trample" on Rule Text in the Card query form, this is converted to the statement:
+
+    SELECT ...
+    FROM Cards
+    WHERE ... AND ruleText LIKE "%Trample%";
+    
+So that the results are hopefully more in line with what the user was looking for.
 
 **Queries are currently implemented for**:
 * Cards
 * Players
+* Retailers
 
 ### Insert functionality
 Insert functionality is somewhat more straight-forward than the other operations, but it is provided for a few categories.
 
 **Inserts are currently implemented for**:
 * Players
+* Retailers
 
 ### Update functionality 
 
