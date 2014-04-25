@@ -18,6 +18,18 @@ After a query or modification is sent to the database, the results page will sho
 
 ## Functionality overview 
 
+### Part 5 deliverable specifications
+The project specification states that we need **at least three** alternative options offered to the user. Below is a list of the alternatives that are currently implemented.
+
+1. Sets -> List Sets. Lists all sets and their release dates.
+2. Cards -> Find card -> Query tab. Card queries.
+3. Players -> Find player -> Query tab. Player queries.
+4. Players -> Find player -> Add tab. Player insert.
+5. Players -> Find player -> Update tab -> Reset player rankings
+6. Players -> Find player -> Update tab -> Calculate player rankings
+7. Retailers -> Find retailer -> Query tab. Retailer queries.
+8. Retailers -> Find retailer -> Add tab. Retailer insert.
+
 ### Query functionality
 Queries are performed on each category. For example, the interface for cards allows the user to search the Cards table and provide conditions that the DBMS will filter rows in the table based on. These conditions are specified by the user using the web form provided in the given "Query" tab.
 
