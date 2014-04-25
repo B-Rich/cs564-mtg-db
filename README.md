@@ -59,7 +59,8 @@ Insert functionality is somewhat more straight-forward than the other operations
 * Players
 * Retailers
 
-### Update functionality 
+### Update functionality
+Users can reset player rankings and re-calculate player rankings through the update tab provided on the players page. The rank calculation is calculated from the total number of wins and set accordingly. This was included as a particularly complex update operation for the part 4 turnin.
 
 ### Delete functionality
 
