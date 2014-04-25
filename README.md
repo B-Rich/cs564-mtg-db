@@ -63,7 +63,7 @@ Insert functionality is somewhat more straight-forward than the other operations
 Users can reset player rankings and re-calculate player rankings through the update tab provided on the players page. The rank calculation is calculated from the total number of wins and set accordingly. This was included as a particularly complex update operation for the part 4 turnin.
 
 ### Delete functionality
-
+Currently not implemented, but will be represented in some form for the final project demo.
 
 
 
