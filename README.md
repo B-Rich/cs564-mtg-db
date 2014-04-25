@@ -23,8 +23,10 @@ Queries are performed on each category. For example, the interface for cards all
 
 In the backend, these web form values are posted to a query results page where PHP translates fields that are provided to an SQL query. 
 
+#### Range search
 An interesting feature I've provided is allowing range values, for example power or toughness for a creature can be provided and then the dropdown allows the user to select the range for these values (=,<,>,<=,>=). This functionality is provided when other numerical values are needed for queries as well.
 
+#### Fuzzy search
 Another notable feature that I've provided is for queries on fields that may have a large amount of text (for example, Rule Text, Flavor Text for Cards or Location for Retailers) are automatically converted to query on the value that the user has input as a LIKE statement. For example, if the user queries for "Trample" on Rule Text in the Card query form, this is converted to the statement:
 
     SELECT ...
