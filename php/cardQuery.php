@@ -1,4 +1,7 @@
 <!DOCTYPE HTML>
+<!-- 
+Query on the Cards table. Dynamically chooses which attributes to SELECT based on the forms the user has chosen on the previous page.
+ -->
 <html>
     <?php 
             $title = 'MTG DB - Card Search Results';

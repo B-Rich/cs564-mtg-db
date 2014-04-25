@@ -1,5 +1,7 @@
 <!DOCTYPE HTML>
-
+<!-- 
+List sets ORDER(ED) BY the most recent sets.
+ -->
 <html>
     <?php 
     $title = 'MTG DB - Sets';

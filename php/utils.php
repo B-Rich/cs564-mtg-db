@@ -123,6 +123,10 @@ HTML;
     return alert($content,'success',True);
 }
 
+/*
+Create the UI element that has different tabs for query, 
+add, update, and remove.
+*/
 function dbTabs(){
     $queryClass = '';
     $addClass = '';

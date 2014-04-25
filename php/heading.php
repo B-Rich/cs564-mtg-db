@@ -1,3 +1,7 @@
+<!-- 
+This is a template that should appear on every page.
+Contains a navbar that connects all the pages together.
+ -->
 <head>
 	<?php
   error_reporting(E_ALL ^ E_NOTICE);
@@ -27,33 +31,33 @@
             	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sets<b class="caret"></b></a>
             	<ul class="dropdown-menu">
                 <li><a href="sets.php"><?php echo listIcon() ?> List sets</a></li>
-                <li class="divider"></li>
+                <!-- <li class="divider"></li>
                 <li class="dropdown-header">Modifications</li>
                 <li><a href="#"><?php echo addIcon() ?> Add set</a></li>
-                <li><a href="#"><?php echo deleteIcon() ?> Remove set</a></li>
+                <li><a href="#"><?php echo deleteIcon() ?> Remove set</a></li> -->
               </ul>
             </li>
             <li class="dropdown">
             	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cards<b class="caret"></b></a>
             	<ul class="dropdown-menu">
                 <li><a href="cards.php"><?php echo searchIcon() ?> Find card</a></li>
-                <li class="divider"></li>
+                <!-- <li class="divider"></li>
                 <li class="dropdown-header">Modifications</li>
                 <li><a href="#"><?php echo addIcon() ?> Add card</a></li>
-                <li><a href="#"><?php echo deleteIcon() ?> Remove card</a></li>
+                <li><a href="#"><?php echo deleteIcon() ?> Remove card</a></li> -->
               </ul>
             </li>
             <li class="dropdown">
             	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Players<b class="caret"></b></a>
             	<ul class="dropdown-menu">
                 <li><a href="players.php"><?php echo searchIcon() ?> Find player</a></li>
-                <li class="divider"></li>
+                <!-- <li class="divider"></li>
                 <li class="dropdown-header">Modifications</li>
                 <li><a href="#"><?php echo addIcon() ?> Add player</a></li>
-                <li><a href="#"><?php echo deleteIcon() ?> Remove player</a></li>
+                <li><a href="#"><?php echo deleteIcon() ?> Remove player</a></li> -->
               </ul>
             </li>
-            <li class="dropdown">
+            <!-- <li class="dropdown">
             	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blogs<b class="caret"></b></a>
             	<ul class="dropdown-menu">
                 <li><a href="blogs.php"><?php echo searchIcon() ?> Find blog</a></li>
@@ -62,16 +66,16 @@
                 <li><a href="#"><?php echo addIcon() ?> Add blog</a></li>
                 <li><a href="#"><?php echo deleteIcon() ?> Remove blog</a></li>
               </ul>
-            </li>
+            </li> -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Retailers<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="retailers.php"><?php echo searchIcon() ?> Find retailer</a></li>
-                <li><a href="#"><i class="fa fa-star" style="color: gold;"></i> Rate retailer</a></li>
-                <li class="divider"></li>
+                <!-- <li class="divider"></li>
                 <li class="dropdown-header">Modifications</li>
+                <li><a href="#"><i class="fa fa-star" style="color: gold;"></i> Rate retailer</a></li>
                 <li><a href="#"><?php echo addIcon() ?> Add player</a></li>
-                <li><a href="#"><?php echo deleteIcon() ?> Remove player</a></li>
+                <li><a href="#"><?php echo deleteIcon() ?> Remove player</a></li> -->
               </ul>
             </li>
           </ul>

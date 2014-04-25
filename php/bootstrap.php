@@ -2,6 +2,10 @@
 /*
 A collection of functions to generate bootstrap html components.
 */
+
+/*
+Gets the Bootstrap 3 CSS and javascript resources.
+*/
 function bootstrapCDN($bootswatchName='None'){
 	if($bootswatchName == "None"){
 		$cssLink = "http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css";
@@ -24,13 +28,13 @@ HTML;
 	return $cdn;
 }
 
+/*
+Create a Glyphicon Icon.
+*/
 function glyphicon($iconName){
 	return "<span class=\"glyphicon glyphicon-$iconName\"></span>";
 }
 
-function fontAwesome($iconName){
-
-}
 
 function searchIcon(){
 	return glyphicon('search');
@@ -64,6 +68,9 @@ HTML;
 }
 
 
+/*
+Create a panel.
+*/
 function panel($panelHeading,$panelBody='',$table='',$class='default'){
 	$panelBodyDiv = '';
 	if($panelBody){
@@ -142,6 +149,9 @@ HTML;
 	return $carouselHtml;
 }
 
+/*
+Create an alert with the given information type.
+*/
 function alert($content,$type='warning',$dismissable=False){
 	$dismissHtml = '';
 	if($dismissable){

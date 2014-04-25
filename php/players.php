@@ -1,4 +1,7 @@
 <!DOCTYPE HTML>
+<!-- 
+	Player form 
+-->
 <html>
 	<?php 
 			require_once("heading.php"); 

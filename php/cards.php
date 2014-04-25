@@ -42,22 +42,7 @@
                                     Mythic Rare
                                 </option>
                             </select>
-                        </div><!-- <label for="color">Colors</label>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="color" value="red"> Red</label>
                         </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="color" value="blue"> Blue</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="color" value="green"> Green</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="color" value="black"> Black</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="color" value="white"> White</label>
-                        </div> -->
                         <div class="form-group">
                             <label for="ruleText">Rule Text</label> <input class="form-control" id="ruleText" name="ruleText" placeholder="Trample">
                         </div>
