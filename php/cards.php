@@ -22,7 +22,7 @@
                             <label for="cardName">Card Name</label> <input class="form-control" id="cardName" name="cardName" placeholder="Grave Titan">
                         </div>
                         <div class="form-group">
-                            <label for="setName">Set Name</label> <input class="form-control" id="setName" name="setName" placeholder="Magic 2014">
+                            <label for="setName">Set Name</label> <input class="form-control" id="setName" name="setName" placeholder="Born of the Gods">
                         </div>
                         <div class="form-group">
                             <label for="rarity">Rarity</label> <select id="rarity" name="rarity">
@@ -47,7 +47,7 @@
                             <label for="ruleText">Rule Text</label> <input class="form-control" id="ruleText" name="ruleText" placeholder="Trample">
                         </div>
                         <div class="form-group">
-                            <label for="flavorText">Flavor Text</label> <input class="form-control" id="flavorText" name="flavorText" placeholder="Excelsior!">
+                            <label for="flavorText">Flavor Text</label> <input class="form-control" id="flavorText" name="flavorText" placeholder="Flying">
                         </div>
                         <div class="form-group form-inline">
                             <label for="cmc">Converted Mana Cost</label> <input type="number" class="form-control" id="cmc" name="cmc" min="0"> <?php echo numberRangeDropdown("cmcRange"); ?>

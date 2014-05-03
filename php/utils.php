@@ -20,7 +20,15 @@ HTML;
 function tableRowFromFields($row,$fields){
     $tds = '';
     foreach($fields as $f){
-        $tds = $tds . "<td>{$row[$f]}</td>\n";
+        if($f == 'cardName'){
+            // Special card link.
+            $cardId = $row['cardId'];
+            $link = "http://cs.unm.edu/~lnunno/cs564/mtg-db/cardView.php?cardId=$cardId";
+            $tds = $tds . "<td><a href=$link>{$row[$f]}</a></td>\n";    
+        }
+        else{
+            $tds = $tds . "<td>{$row[$f]}</td>\n";    
+        }
     }
     return <<<HTML
 <tr>

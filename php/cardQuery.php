@@ -14,7 +14,7 @@ Query on the Cards table. Dynamically chooses which attributes to SELECT based o
         	<?php
         		$conditionBlock = array();
         		// Initialize with attributes we always want.
-        		$sAttrArr = array('cardName','setName');
+        		$sAttrArr = array('cardId','cardName','setName');
         		echo backToQueryButton('cards.php');
         		foreach ($_POST as $key => $value) {
         			if(stripos($key,'Range')){
