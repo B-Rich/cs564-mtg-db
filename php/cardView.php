@@ -51,25 +51,54 @@ SQL;
             $sr = $db->query($sellsQuery);
             if(!$sr){
                 echo dbError($sellsQuery,$db);
-                return;
             }
             else if($sr->num_rows <= 0){
                 echo dbWarning($sellsQuery);
                 echo 'No retailers found.';
-                return;
             }
-            $columnNames = array('Name','Location','Price','Quantity');
-            $theadHTML = tableHeading($columnNames);
-            $fields = array('retailerName','location','price','quantity');
-            while ($row = $sr->fetch_array()) {
-                $tableBody = $tableBody . tableRowFromFields($row,$fields);
-            }
-            $retailerInfoHTML = table($theadHTML,$tableBody);
-            $sellsHTML = <<<HTML
+            else{
+                $columnNames = array('Name','Location','Price','Quantity');
+                $theadHTML = tableHeading($columnNames);
+                $fields = array('retailerName','location','price','quantity');
+                while ($row = $sr->fetch_array()) {
+                    $tableBody = $tableBody . tableRowFromFields($row,$fields);
+                }
+                $retailerInfoHTML = table($theadHTML,$tableBody);
+                $sellsHTML = <<<HTML
 <h2>Available from these retailers:</h2>
 $retailerInfoHTML
 HTML;
-            echo $sellsHTML;
+                echo $sellsHTML;
+            }
+            
+           $sql = <<<SQL
+SELECT deckName,playerUsername,quantity
+FROM CardInDeck NATURAL JOIN Cards
+WHERE cardName="$cardName";
+SQL;
+           $r = $db->query($sql);
+           if(!$r){
+                echo dbError($sql,$db);
+                return;
+            }
+            else if($r->num_rows <= 0){
+                echo dbWarning($sql);
+                echo 'No decks use this card.';
+                return;
+            }
+            $columnNames = array('Deck Name','Player Username','Quantity');
+            $theadHTML = tableHeading($columnNames);
+            $tableBody = '';
+            $fields = array('deckName','playerUsername','quantity');
+            while ($row = $r->fetch_array()) {
+                $tableBody = $tableBody . tableRowFromFields($row,$fields);
+            }
+            $deckTableHTML = table($theadHTML,$tableBody);
+            $decksHTML = <<<HTML
+<h2>Used in these decks</h2>
+$deckTableHTML
+HTML;
+            echo $decksHTML;
            ?> 
         </div>
     </body>

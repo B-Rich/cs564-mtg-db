@@ -49,7 +49,7 @@ function tableRowFromFields($row,$fields){
             $link = "http://cs.unm.edu/~lnunno/cs564/mtg-db/playerView.php?playerUsername=$playerUsername";
             $del = deleteIconLg();
             $deleteLink = "<a href=\"playerDelete.php?playerUsername=$playerUsername\" title=\"Delete this player from the database\">$del</a>";
-            $tds = $tds . "<td>$deleteLink  <a href=$link>{$row[$f]}</a></td>\n";    
+            $tds = $tds . "<td>$deleteLink  {$row[$f]}</td>\n";    
         }
         else{
             $tds = $tds . "<td>{$row[$f]}</td>\n";    

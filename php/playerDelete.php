@@ -12,9 +12,10 @@
                 $playerUsername = $_GET['playerUsername'];
                 $sql = <<<QUERY
 START TRANSACTION;
-DELETE FROM Blogs WHERE playerUsername="$playerUsername";
-DELETE FROM Decks WHERE playerUsername="$playerUsername";
-DELETE FROM Players WHERE playerUsername="$playerUsername";
+DELETE FROM Blogs      WHERE playerUsername="$playerUsername";
+DELETE FROM CardInDeck WHERE playerUsername="$playerUsername";
+DELETE FROM Decks      WHERE playerUsername="$playerUsername";
+DELETE FROM Players    WHERE playerUsername="$playerUsername";
 COMMIT;
 QUERY;
                 $r = $db->multi_query($sql);
