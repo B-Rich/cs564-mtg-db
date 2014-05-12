@@ -76,6 +76,15 @@
 						<div class="form-group">
 							<label for="birthday">Birthday</label> <input type="date" class="form-control" id="birthday" name="birthday">
 						</div>
+						<div class="form-group">
+                            <label for="wins">Wins</label> <input type="number" class="form-control" id="wins" name="wins" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="losses">Losses</label> <input type="number" class="form-control" id="losses" name="losses" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="draws">Draws</label> <input type="number" class="form-control" id="draws" name="draws" min="0">
+                        </div>
 						<button type="submit" class="btn btn-success btn-lg">Add Player</button>
 					</form>
 				</div>

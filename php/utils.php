@@ -44,6 +44,13 @@ function tableRowFromFields($row,$fields){
             $deleteLink = "<a href=\"retailerDelete.php?retailerName=$retailerName&location=$location\" title=\"Delete this retailer from the database\">$del</a>";
             $tds = $tds . "<td>$deleteLink  <a href=$link>{$row[$f]}</a></td>\n";    
         }
+        elseif ($f == 'playerUsername') {
+            $playerUsername = urlencode($row['playerUsername']);
+            $link = "http://cs.unm.edu/~lnunno/cs564/mtg-db/playerView.php?playerUsername=$playerUsername";
+            $del = deleteIconLg();
+            $deleteLink = "<a href=\"playerDelete.php?playerUsername=$playerUsername\" title=\"Delete this player from the database\">$del</a>";
+            $tds = $tds . "<td>$deleteLink  <a href=$link>{$row[$f]}</a></td>\n";    
+        }
         else{
             $tds = $tds . "<td>{$row[$f]}</td>\n";    
         }
