@@ -23,7 +23,13 @@
             $data = $r->fetch_array();
             $imageLink = $data['imageLink'];
             $cardName = $data['cardName'];
+            $prevCard = "http://cs.unm.edu/~lnunno/cs564/mtg-db/cardView.php?cardId=" . strval($cardId-1);
+            $nextCard = "http://cs.unm.edu/~lnunno/cs564/mtg-db/cardView.php?cardId=" . strval($cardId+1);
             $cardDisplayHTML = <<<HTML
+<ul class="pager">
+  <li class="previous"><a href="$prevCard">&larr; Previous Card</a></li>
+  <li class="next"><a href="$nextCard">Next Card &rarr;</a></li>
+</ul>
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">$cardName</h3>

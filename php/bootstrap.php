@@ -52,6 +52,10 @@ function deleteIcon(){
 	return '<i style="color: red;" class="fa fa-minus-square"></i>';
 }
 
+function deleteIconLg(){
+	return '<i style="color: red;" class="fa fa-minus-square fa-lg"></i>';
+}
+
 function backIcon(){
 	return '<i style="color: blue;" class="fa fa-arrow-circle-left"></i>';
 }

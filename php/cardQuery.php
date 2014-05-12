@@ -37,6 +37,7 @@ Query on the Cards table. Dynamically chooses which attributes to SELECT based o
         				array_push($sAttrArr,$key);
         			}
         		}
+                $sAttrArr = array_unique($sAttrArr);
         		$selectAttr = '';
         		if(count($sAttrArr) > 0){
         			$selectAttr = join(",",$sAttrArr);

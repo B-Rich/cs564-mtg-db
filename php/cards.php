@@ -47,7 +47,7 @@
                             <label for="ruleText">Rule Text</label> <input class="form-control" id="ruleText" name="ruleText" placeholder="Trample">
                         </div>
                         <div class="form-group">
-                            <label for="flavorText">Flavor Text</label> <input class="form-control" id="flavorText" name="flavorText" placeholder="Flying">
+                            <label for="flavorText">Flavor Text</label> <input class="form-control" id="flavorText" name="flavorText" placeholder="Something clever">
                         </div>
                         <div class="form-group form-inline">
                             <label for="cmc">Converted Mana Cost</label> <input type="number" class="form-control" id="cmc" name="cmc" min="0"> <?php echo numberRangeDropdown("cmcRange"); ?>

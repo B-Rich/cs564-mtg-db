@@ -35,6 +35,9 @@
 						<div class="form-group">
 							<label for="location">Location</label> <input class="form-control" id="location" name="location" placeholder="Albuquerque, New Mexico">
 						</div>
+						<div class="form-group form-inline">
+                            <label for="rating">Rating</label> <input type="number" class="form-control" id="rating" name="rating" min="0"> <?php echo numberRangeDropdown("ratingRange"); ?>
+                        </div>
 						<button type="submit" class="btn btn-primary btn-lg">Search for Retailers</button>
 					</form>
 				</div>

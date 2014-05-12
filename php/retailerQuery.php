@@ -12,9 +12,19 @@
                 $conditionBlock = array();
                 echo backToQueryButton('retailers.php');
                 foreach ($_POST as $key => $value) {
+                    if(stripos($key,'Range')){
+                        // Don't pick up the range dropdowns.
+                        continue;
+                    }
                     if($value){
                         $op = rangeOpStr($_POST[$key.'Range']);
-                        $condition = " $key LIKE '%$value%' ";
+                        if($key == 'rating'){
+                            $condition = " $key$op'$value'";    
+                        }
+                        else{
+                            $condition = " $key LIKE '%$value%' ";    
+                        }
+                        
                         array_push($conditionBlock, $condition);
                     }
                 }

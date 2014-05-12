@@ -24,7 +24,25 @@ function tableRowFromFields($row,$fields){
             // Special card link.
             $cardId = $row['cardId'];
             $link = "http://cs.unm.edu/~lnunno/cs564/mtg-db/cardView.php?cardId=$cardId";
-            $tds = $tds . "<td><a href=$link>{$row[$f]}</a></td>\n";    
+            $del = deleteIconLg();
+            $deleteLink = "<a href=\"cardDelete.php?cardId=$cardId\" title=\"Delete this card from the database\">$del</a>";
+            $tds = $tds . "<td>$deleteLink  <a href=$link>{$row[$f]}</a></td>\n";    
+        }
+        elseif ($f == 'setName') {
+            $setName = $row['setName'];
+            $setName = urlencode($setName);
+            $link = "http://cs.unm.edu/~lnunno/cs564/mtg-db/setView.php?setName=$setName";
+            $del = deleteIconLg();
+            $deleteLink = "<a href=\"setDelete.php?setName=$setName\" title=\"Delete this set from the database\">$del</a>";
+            $tds = $tds . "<td>$deleteLink  <a href=$link>{$row[$f]}</a></td>\n";    
+        }
+        elseif ($f == 'retailerName') {
+            $retailerName = urlencode($row['retailerName']);
+            $location = urlencode($row['location']);
+            $link = "http://cs.unm.edu/~lnunno/cs564/mtg-db/retailerView.php?retailerName=$retailerName&location=$location";
+            $del = deleteIconLg();
+            $deleteLink = "<a href=\"retailerDelete.php?retailerName=$retailerName&location=$location\" title=\"Delete this retailer from the database\">$del</a>";
+            $tds = $tds . "<td>$deleteLink  <a href=$link>{$row[$f]}</a></td>\n";    
         }
         else{
             $tds = $tds . "<td>{$row[$f]}</td>\n";    

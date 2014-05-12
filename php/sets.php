@@ -13,9 +13,16 @@ List sets ORDER(ED) BY the most recent sets.
         <?php
         $sql = 'SELECT * FROM Sets ORDER BY dateReleased DESC;';
         $r = $db->query($sql);
-        if (!$r) {
-            printf ("Query '$sql' failed: %s (%d)\n", $db->error, $db->errno);
-            exit();
+        if(!$r){
+            echo dbError($sql,$db);
+            return;
+        }
+        else if($r->num_rows <= 0){
+            echo dbWarning($sql);
+            return;
+        }
+        else {
+            echo dbSuccess($sql);
         }
         $columnNames = array('Set Name', 'Date Released');
         $theadHTML = tableHeading($columnNames);
