@@ -35,6 +35,7 @@
     <h3 class="panel-title">$cardName</h3>
   </div>
   <div class="panel-body">
+    <a class="btn btn-danger btn-lg" href="cardDelete.php?cardId=$cardId">Delete this card</a>
     <div class="row text-center">
     <img src="$imageLink" class="img-thumbnail">
     </div>
